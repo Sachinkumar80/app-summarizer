@@ -1,2 +1,5 @@
 streamlit
 google-cloud-aiplatform
+vertexai
+pypdf
+python-docx
