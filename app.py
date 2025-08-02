@@ -1,9 +1,12 @@
 import streamlit as st
-from google.cloud import aiplatform
+import vertexai
+from vertexai.preview.generative_models import GenerativeModel
 
 # Initialize Vertex AI
-aiplatform.init(project="trai-project", location="us-central1")
-model = aiplatform.GenerativeModel("gemini-1.5-flash")
+vertexai.init(project="YOUR_PROJECT_ID", location="us-central1")
+
+# Load Gemini model
+model = GenerativeModel("gemini-1.5-flash")
 
 def summarize_text(text):
     prompt = f"Summarize this document in simple, concise language:\n\n{text}"
