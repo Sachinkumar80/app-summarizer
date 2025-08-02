@@ -3,3 +3,4 @@ google-cloud-aiplatform
 vertexai
 pypdf
 python-docx
+google-cloud-storage
